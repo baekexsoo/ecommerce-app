@@ -1,0 +1,86 @@
+[
+    {
+        "id": 0,
+        "category": "Céréales",
+        "title": "riz",
+        "price": "12.00",
+        "imageUrl": "assets/images/items/1.jpg"
+    },
+    {
+        "id": 1,
+        "category": "Céréales",
+        "title": "sorgho",
+        "price": "12.00",
+        "imageUrl": "assets/images/items/1.jpg"
+    },
+    {
+        "id": 2,
+        "category": "Céréales",
+        "title": "mais",
+        "price": "12.00",
+        "imageUrl": "assets/images/items/1.jpg"
+    },
+    {
+        "id": 3,
+        "category": "Céréales",
+        "title": "voandzou",
+        "price": "12.00",
+        "imageUrl": "assets/images/items/1.jpg"
+    },
+    {
+        "id": 4,
+        "category": "Céréales",
+        "title": "ignames",
+        "price": "12.00",
+        "imageUrl": "assets/images/items/1.jpg"
+    },
+    {
+        "id": 5,
+        "category": "Céréales",
+        "title": "arachide",
+        "price": "12.00",
+        "imageUrl": "assets/images/items/1.jpg"
+    },
+    {
+        "id": 6,
+        "category": "Céréales",
+        "title": "haricot",
+        "price": "12.00",
+        "imageUrl": "assets/images/items/1.jpg"
+    },
+    {
+        "id": 7,
+        "category": "Fruits",
+        "title": "bananes",
+        "price": "12.00",
+        "imageUrl": "assets/images/items/1.jpg"
+    },
+    {
+        "id": 8,
+        "category": "Fruits",
+        "title": "ananas",
+        "price": "12.00",
+        "imageUrl": "assets/images/items/1.jpg"
+    },
+    {
+        "id": 9,
+        "category": "Fruits",
+        "title": "papaye",
+        "price": "12.00",
+        "imageUrl": "assets/images/items/1.jpg"
+    },
+    {
+        "id": 10,
+        "category": "Fruits",
+        "title": "coco",
+        "price": "12.00",
+        "imageUrl": "assets/images/items/1.jpg"
+    },
+    {
+        "id": 11,
+        "category": "Fruits",
+        "title": "avocats",
+        "price": "12.00",
+        "imageUrl": "assets/images/items/1.jpg"
+    }
+]

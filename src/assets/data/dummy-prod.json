@@ -1,0 +1,62 @@
+[
+  {
+    
+      "id": 0,
+      "title": "céréales",
+      "galerie": "galerie",
+      "imageUrl": "assets/images/items/1.jpg",
+      "urlProd": "http://localhost:1234"
+     
+  },
+  {
+    "id": 1,
+    "title": "fruits",
+    "galerie": "galerie",
+    "imageUrl": "assets/images/items/2.jpg",
+    "urlProd": "http://localhost:1235"
+  },
+  {
+    "id": 2,
+    "title": "condiments",
+    "galerie": "galerie",
+    "imageUrl": "assets/images/items/3.jpg",
+    "urlProd": "http://localhost:1236"
+    
+  },
+  {
+    "id": 3,
+    "title": "légumes",
+    "galerie": "galerie",
+    "imageUrl": "assets/images/items/4.jpg",
+    "urlProd": "http://localhost:1237"
+  },
+  {
+    "id": 4,
+    "title": "Macbook pro",
+    "galerie": "galerie",
+    "imageUrl": "assets/images/items/5.jpg",
+    "urlProd": "http://localhost:1238"
+  },
+  {
+    "id": 5,
+    "title": "Fauteuille",
+    "galerie": "galerie",
+    "imageUrl": "assets/images/items/6.jpg",
+    "urlProd": "http://localhost:1239"
+  },
+  {
+    "id": 6,
+    "title": "Apple watch",
+    "galerie": "galerie",
+    "imageUrl": "assets/images/items/7.jpg",
+    "urlProd": "http://localhost:1240"
+  },
+  {
+    "id": 7,
+    "title": "LG Headphone",
+    "galerie": "galerie",
+    "imageUrl": "assets/images/items/9.jpg",
+    "urlProd": "http://localhost:1241"
+  }
+
+]
