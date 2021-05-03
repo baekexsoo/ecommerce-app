@@ -1,18 +1,22 @@
+<div *ngIf="auth.user$ | async as user; else login">
+  <pre>
+    {{ user | json }}
+  </pre>
+  
+  <hr>
+  <button class="button" (click)="auth.signOut()">Sign Out</button>
+
+</div>
+
+<ng-template #login>
+  <button class="button" (click)="auth.googleSignin()">Login with Google</button>
+</ng-template>
 <div class="medium-list">
     <div class="list-viewer-wrapper">
       <div class="list-header-title">Register</div>
-      <mat-slider min="1" max="100" step="1" value="1"></mat-slider>
   
-      <form [formGroup]="registerForm" (ngSubmit)="registerForm.valid && onRegisterSubmit()" novalidate>
-        <div class="form-container">
-          <mat-form-field>
-            <input id="name"
-                   matInput
-                   formControlName="name"
-                   [(ngModel)]="user.name"
-                   placeholder="Enter your name" />
-          </mat-form-field>
-  
+      <form [formGroup]="loginForm" (ngSubmit)="loginForm.valid && onLoginSubmit()" novalidate>
+        <div class="form-container">  
           <mat-form-field>
               <input id="email"
                      matInput
@@ -29,14 +33,14 @@
                      placeholder="Enter your password"
                      [type]="hide ? 'password':'text'" />
                 <mat-icon matSuffix (click)="hide = !hide">
-                  
+                  {{hide ? 'visibility' : 'visibility_off'}}
                 </mat-icon>
             </mat-form-field>
   
             <button mat-button type="submit" 
                     class="mat-raised-button mat-primary" 
-                    [disabled]="!registerForm.valid">Register</button>
-            <a button mat-button routerLink="/login" class="divider">Login</a>
+                    [disabled]="!loginForm.valid">Login</button>
+            <button mat-button routerLink="/register" class="divider">Register</button>
         </div>
       </form>
     </div>

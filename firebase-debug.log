@@ -1,0 +1,223 @@
+[debug] [2021-04-29T10:34:22.542Z] ----------------------------------------------------------------------
+[debug] [2021-04-29T10:34:22.546Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Rina\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2021-04-29T10:34:22.547Z] CLI Version:   9.10.0
+[debug] [2021-04-29T10:34:22.547Z] Platform:      win32
+[debug] [2021-04-29T10:34:22.547Z] Node Version:  v14.15.4
+[debug] [2021-04-29T10:34:22.548Z] Time:          Thu Apr 29 2021 11:34:22 GMT+0100 (heure normale d’Afrique de l’Ouest)
+[debug] [2021-04-29T10:34:22.549Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2021-04-29T10:34:22.552Z] >>> [apiv2][query] GET https://firebase-public.firebaseio.com/cli.json [none]
+[debug] [2021-04-29T10:34:22.583Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-04-29T10:34:22.584Z] > authorizing via signed-in user (ndamarina17@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\Rina\Desktop\graduation_project-main
+
+[debug] [2021-04-29T10:34:23.703Z] <<< [apiv2][status] GET https://firebase-public.firebaseio.com/cli.json 200
+[debug] [2021-04-29T10:34:23.703Z] <<< [apiv2][body] GET https://firebase-public.firebaseio.com/cli.json {"cloudBuildErrorAfter":1594252800000,"cloudBuildWarnAfter":1590019200000,"defaultNode10After":1594252800000,"minVersion":"3.0.5","node8DeploysDisabledAfter":1613390400000,"node8RuntimeDisabledAfter":1615809600000,"node8WarnAfter":1600128000000}
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2021-04-29T10:35:07.677Z] > refreshing access token with scopes: []
+[debug] [2021-04-29T10:35:07.678Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-04-29T10:35:08.273Z] <<< HTTP RESPONSE 200 {"pragma":"no-cache","expires":"Mon, 01 Jan 1990 00:00:00 GMT","date":"Thu, 29 Apr 2021 10:35:09 GMT","cache-control":"no-cache, no-store, max-age=0, must-revalidate","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-04-29T10:35:08.391Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects pageSize=100
+[debug] [2021-04-29T10:35:09.583Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects 200
+[debug] [2021-04-29T10:35:09.584Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects [omitted]
+[info] i  Using project ecommerce-8dd73 (ecommerce) 
+[info] 
+=== Database Setup
+[info] i  database: ensuring required API firebasedatabase.googleapis.com is enabled... 
+[debug] [2021-04-29T10:35:12.636Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2021-04-29T10:35:12.637Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-04-29T10:35:13.345Z] <<< HTTP RESPONSE 200 {"expires":"Mon, 01 Jan 1990 00:00:00 GMT","date":"Thu, 29 Apr 2021 10:35:14 GMT","pragma":"no-cache","cache-control":"no-cache, no-store, max-age=0, must-revalidate","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-04-29T10:35:13.442Z] >>> HTTP REQUEST GET https://serviceusage.googleapis.com/v1/projects/ecommerce-8dd73/services/firebasedatabase.googleapis.com  
+ 
+[debug] [2021-04-29T10:35:15.364Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Thu, 29 Apr 2021 10:35:16 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] +  database: required API firebasedatabase.googleapis.com is enabled 
+[info] 
+[debug] [2021-04-29T10:35:15.370Z] >>> HTTP REQUEST GET https://firebasedatabase.googleapis.com/v1beta/projects/ecommerce-8dd73/locations/-/instances/ecommerce-8dd73-default-rtdb  
+ 
+[debug] [2021-04-29T10:35:16.164Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Thu, 29 Apr 2021 10:35:17 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] 
+[info] Firebase Realtime Database Security Rules allow you to define how your data should be
+[info] structured and when your data can be read from and written to.
+[info] 
+[debug] [2021-04-29T10:35:20.130Z] >>> HTTP REQUEST GET https://ecommerce-8dd73-default-rtdb.europe-west1.firebasedatabase.app/.settings/rules.json  
+ 
+[debug] [2021-04-29T10:35:21.164Z] <<< HTTP RESPONSE 200 {"server":"nginx","date":"Thu, 29 Apr 2021 10:35:22 GMT","content-type":"application/json; charset=utf-8","content-length":"121","connection":"keep-alive","access-control-allow-origin":"*","cache-control":"no-cache","strict-transport-security":"max-age=31556926; includeSubDomains; preload"}
+[info] +  Database Rules for ecommerce-8dd73-default-rtdb have been written to database.rules.json. 
+[info] Future modifications to database.rules.json will update Realtime Database Security Rules when you run
+[info] firebase deploy.
+[info] 
+=== Firestore Setup
+[debug] [2021-04-29T10:35:21.171Z] >>> HTTP REQUEST GET https://serviceusage.googleapis.com/v1/projects/ecommerce-8dd73/services/firestore.googleapis.com  
+ 
+[debug] [2021-04-29T10:35:22.848Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Thu, 29 Apr 2021 10:35:24 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-04-29T10:35:22.850Z] >>> HTTP REQUEST GET https://appengine.googleapis.com/v1/apps/ecommerce-8dd73  
+ 
+[debug] [2021-04-29T10:35:23.939Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Thu, 29 Apr 2021 10:35:25 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-04-29T10:35:23.940Z] database_type: CLOUD_FIRESTORE
+[debug] [2021-04-29T10:35:23.942Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-04-29T10:35:23.943Z] > authorizing via signed-in user (ndamarina17@gmail.com)
+[debug] [2021-04-29T10:35:23.943Z] [iam] checking project ecommerce-8dd73 for permissions ["firebase.projects.get"]
+[debug] [2021-04-29T10:35:23.945Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/ecommerce-8dd73:testIamPermissions  
+ {"permissions":["firebase.projects.get"]}
+[debug] [2021-04-29T10:35:25.466Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Thu, 29 Apr 2021 10:35:27 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=1096","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] 
+[info] Firestore Security Rules allow you to define how and when to allow
+[info] requests. You can keep these rules in your project directory
+[info] and publish them with firebase deploy.
+[info] 
+[debug] [2021-04-29T10:35:27.576Z] >>> HTTP REQUEST GET https://firebaserules.googleapis.com/v1/projects/ecommerce-8dd73/releases?pageSize=10&pageToken=  
+ 
+[debug] [2021-04-29T10:35:29.094Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Thu, 29 Apr 2021 10:35:30 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-04-29T10:35:29.099Z] Found ruleset: projects/ecommerce-8dd73/rulesets/a60c65c2-6945-4d3c-b734-f20f591068a0
+[debug] [2021-04-29T10:35:29.101Z] >>> HTTP REQUEST GET https://firebaserules.googleapis.com/v1/projects/ecommerce-8dd73/rulesets/a60c65c2-6945-4d3c-b734-f20f591068a0  
+ 
+[debug] [2021-04-29T10:35:30.257Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Thu, 29 Apr 2021 10:35:31 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] 
+[info] Firestore indexes allow you to perform complex queries while
+[info] maintaining performance that scales with the size of the result
+[info] set. You can keep index definitions in your project directory
+[info] and publish them with firebase deploy.
+[info] 
+[debug] [2021-04-29T10:35:32.064Z] >>> HTTP REQUEST GET https://firestore.googleapis.com/v1/projects/ecommerce-8dd73/databases/(default)/collectionGroups/-/indexes  
+ 
+[debug] [2021-04-29T10:35:32.064Z] >>> HTTP REQUEST GET https://firestore.googleapis.com/v1/projects/ecommerce-8dd73/databases/(default)/collectionGroups/-/fields?filter=indexConfig.usesAncestorConfig=false  
+ 
+[debug] [2021-04-29T10:35:34.075Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Thu, 29 Apr 2021 10:35:35 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-04-29T10:35:34.177Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Thu, 29 Apr 2021 10:35:35 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] 
+=== Functions Setup
+[info] 
+[info] A functions directory will be created in your project with a Node.js
+[info] package pre-configured. Functions can be deployed with firebase deploy.
+[info] 
+[debug] [2021-04-29T10:35:34.204Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-04-29T10:35:34.205Z] > authorizing via signed-in user (ndamarina17@gmail.com)
+[debug] [2021-04-29T10:35:34.206Z] [iam] checking project ecommerce-8dd73 for permissions ["firebase.projects.get"]
+[debug] [2021-04-29T10:35:34.209Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/ecommerce-8dd73:testIamPermissions  
+ {"permissions":["firebase.projects.get"]}
+[debug] [2021-04-29T10:35:35.644Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Thu, 29 Apr 2021 10:35:37 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=1095","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-04-29T10:35:35.647Z] >>> HTTP REQUEST POST https://serviceusage.googleapis.com/v1/projects/ecommerce-8dd73/services/cloudfunctions.googleapis.com:enable  
+ 
+[debug] [2021-04-29T10:35:35.649Z] >>> HTTP REQUEST POST https://serviceusage.googleapis.com/v1/projects/ecommerce-8dd73/services/runtimeconfig.googleapis.com:enable  
+ 
+[debug] [2021-04-29T10:35:37.228Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Thu, 29 Apr 2021 10:35:38 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-04-29T10:35:37.774Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Thu, 29 Apr 2021 10:35:39 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] +  Wrote functions/package.json 
+[info] +  Wrote functions/.eslintrc.js 
+[info] +  Wrote functions/tsconfig.json 
+[info] +  Wrote functions/tsconfig.dev.json 
+[info] +  Wrote functions/src/index.ts 
+[info] +  Wrote functions/.gitignore 
+[info] 
+=== Hosting Setup
+[info] 
+[info] Your public directory is the folder (relative to your project directory) that
+[info] will contain Hosting assets to be uploaded with firebase deploy. If you
+[info] have a build process for your assets, use your build's output directory.
+[info] 
+[info] +  Wrote public/404.html 
+[debug] [2021-04-29T10:50:42.832Z] >>> [apiv2][query] GET https://www.gstatic.com/firebasejs/releases.json [none]
+[debug] [2021-04-29T10:50:43.614Z] <<< [apiv2][status] GET https://www.gstatic.com/firebasejs/releases.json 200
+[debug] [2021-04-29T10:50:43.615Z] <<< [apiv2][body] GET https://www.gstatic.com/firebasejs/releases.json {"current":{"version":"8.4.2","browserURL":"https://www.gstatic.com/firebasejs/8.4.2/firebase.js","packageURL":"https://www.gstatic.com/firebasejs/8.4.2/firebase.tgz"},"live":{"version":"8.4","browserURL":"https://www.gstatic.com/firebasejs/live/8.4/firebase.js","packageURL":"https://www.gstatic.com/firebasejs/live/8.4/firebase.tgz"},"components":{"analytics":"https://www.gstatic.com/firebasejs/8.4.2/firebase-analytics.js","app":"https://www.gstatic.com/firebasejs/8.4.2/firebase-app.js","auth":"https://www.gstatic.com/firebasejs/8.4.2/firebase-auth.js","database":"https://www.gstatic.com/firebasejs/8.4.2/firebase-database.js","firestore":"https://www.gstatic.com/firebasejs/8.4.2/firebase-firestore.js","functions":"https://www.gstatic.com/firebasejs/8.4.2/firebase-functions.js","installations":"https://www.gstatic.com/firebasejs/8.4.2/firebase-installations.js","messaging":"https://www.gstatic.com/firebasejs/8.4.2/firebase-messaging.js","storage":"https://www.gstatic.com/firebasejs/8.4.2/firebase-storage.js","performance":"https://www.gstatic.com/firebasejs/8.4.2/firebase-performance.js","remote-config":"https://www.gstatic.com/firebasejs/8.4.2/firebase-remote-config.js","firestore.memory":"https://www.gstatic.com/firebasejs/8.4.2/firebase-firestore.memory.js"}}
+[info] +  Wrote public/index.html 
+[info] 
+[info] i  Detected a .git folder at C:\Users\Rina\Desktop\graduation_project-main 
+[info] i  Authorizing with GitHub to upload your service account to a GitHub repository's secrets store. 
+[info] 
+[info] Visit this URL on this device to log in:
+[info] https://github.com/login/oauth/authorize?client_id=89cf50f02ac6aaed3484&state=236407683&redirect_uri=http%3A%2F%2Flocalhost%3A9005&scope=read%3Auser%20repo%20public_repo
+[info] 
+[info] Waiting for authentication...
+[debug] [2021-04-29T10:50:45.746Z] >>> HTTP REQUEST POST https://github.com/login/oauth/access_token  
+ {"client_id":"89cf50f02ac6aaed3484","client_secret":"3330d14abc895d9a74d5f17cd7a00711fa2c5bf0","code":"e61bdce5f2a54fd6b58a","redirect_uri":"http://localhost:9005","state":"236407683"}
+[debug] [2021-04-29T10:50:46.374Z] <<< HTTP RESPONSE 200 {"server":"GitHub.com","date":"Thu, 29 Apr 2021 10:50:46 GMT","content-type":"application/json; charset=utf-8","transfer-encoding":"chunked","vary":"X-PJAX, Accept-Encoding, Accept, X-Requested-With","permissions-policy":"interest-cohort=()","etag":"W/\"bb7b1b896ca978796a8347d75b430e18\"","cache-control":"max-age=0, private, must-revalidate","strict-transport-security":"max-age=31536000; includeSubdomains; preload","x-frame-options":"deny","x-content-type-options":"nosniff","x-xss-protection":"0","referrer-policy":"origin-when-cross-origin, strict-origin-when-cross-origin","expect-ct":"max-age=2592000, report-uri=\"https://api.github.com/_private/browser/errors\"","content-security-policy":"default-src 'none'; base-uri 'self'; block-all-mixed-content; connect-src 'self' uploads.github.com www.githubstatus.com collector.githubapp.com api.github.com github-cloud.s3.amazonaws.com github-production-repository-file-5c1aeb.s3.amazonaws.com github-production-upload-manifest-file-7fdce7.s3.amazonaws.com github-production-user-asset-6210df.s3.amazonaws.com cdn.optimizely.com logx.optimizely.com/v1/events wss://alive.github.com; font-src github.githubassets.com; form-action 'self' github.com gist.github.com; frame-ancestors 'none'; frame-src render.githubusercontent.com; img-src 'self' data: github.githubassets.com identicons.github.com collector.githubapp.com github-cloud.s3.amazonaws.com secured-user-images.githubusercontent.com/ *.githubusercontent.com; manifest-src 'self'; media-src 'none'; script-src github.githubassets.com; style-src 'unsafe-inline' github.githubassets.com; worker-src github.com/socket-worker-3f088aa2.js gist.github.com/socket-worker-3f088aa2.js","x-github-request-id":"FBE4:70F9:95F8AD2:9A9B1F0:608A8F85"}
+[debug] [2021-04-29T10:50:46.378Z] >>> [apiv2][query] GET https://api.github.com/user [none]
+[debug] [2021-04-29T10:50:47.239Z] <<< [apiv2][status] GET https://api.github.com/user 200
+[debug] [2021-04-29T10:50:47.239Z] <<< [apiv2][body] GET https://api.github.com/user {"login":"baekexsoo","id":68418755,"node_id":"MDQ6VXNlcjY4NDE4NzU1","avatar_url":"https://avatars.githubusercontent.com/u/68418755?v=4","gravatar_id":"","url":"https://api.github.com/users/baekexsoo","html_url":"https://github.com/baekexsoo","followers_url":"https://api.github.com/users/baekexsoo/followers","following_url":"https://api.github.com/users/baekexsoo/following{/other_user}","gists_url":"https://api.github.com/users/baekexsoo/gists{/gist_id}","starred_url":"https://api.github.com/users/baekexsoo/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/baekexsoo/subscriptions","organizations_url":"https://api.github.com/users/baekexsoo/orgs","repos_url":"https://api.github.com/users/baekexsoo/repos","events_url":"https://api.github.com/users/baekexsoo/events{/privacy}","received_events_url":"https://api.github.com/users/baekexsoo/received_events","type":"User","site_admin":false,"name":null,"company":null,"blog":"","location":null,"email":null,"hireable":null,"bio":null,"twitter_username":null,"public_repos":10,"public_gists":0,"followers":0,"following":0,"created_at":"2020-07-17T07:43:03Z","updated_at":"2021-04-27T15:30:43Z","private_gists":0,"total_private_repos":2,"owned_private_repos":2,"disk_usage":7085,"collaborators":0,"two_factor_authentication":false,"plan":{"name":"free","space":976562499,"collaborators":0,"private_repos":10000}}
+[info] 
+[info] +  Success! Logged into GitHub as baekexsoo 
+[info] 
+[debug] [2021-04-29T10:51:09.176Z] >>> [apiv2][query] GET https://api.github.com/repos/baekexsoo/graduation-project/actions/secrets/public-key type=owner
+[debug] [2021-04-29T10:51:09.942Z] <<< [apiv2][status] GET https://api.github.com/repos/baekexsoo/graduation-project/actions/secrets/public-key 404
+[debug] [2021-04-29T10:51:09.942Z] <<< [apiv2][body] GET https://api.github.com/repos/baekexsoo/graduation-project/actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest/reference/actions#get-a-repository-public-key"}
+[debug] [2021-04-29T10:52:35.257Z] >>> [apiv2][query] GET https://api.github.com/repos/user/ecommerce-app/actions/secrets/public-key type=owner
+[debug] [2021-04-29T10:52:35.971Z] <<< [apiv2][status] GET https://api.github.com/repos/user/ecommerce-app/actions/secrets/public-key 404
+[debug] [2021-04-29T10:52:35.972Z] <<< [apiv2][body] GET https://api.github.com/repos/user/ecommerce-app/actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest/reference/actions#get-a-repository-public-key"}
+[debug] [2021-04-29T10:53:27.365Z] >>> [apiv2][query] GET https://api.github.com/repos/baekexsoo/ecommerce-app/actions/secrets/public-key type=owner
+[debug] [2021-04-29T10:53:28.131Z] <<< [apiv2][status] GET https://api.github.com/repos/baekexsoo/ecommerce-app/actions/secrets/public-key 200
+[debug] [2021-04-29T10:53:28.131Z] <<< [apiv2][body] GET https://api.github.com/repos/baekexsoo/ecommerce-app/actions/secrets/public-key {"key_id":"568250167242549743","key":"7ccf+Ta3H2SYooAOSuZ/hf4CBqHUMEV2pd9lFN+WNxo="}
+[debug] [2021-04-29T10:53:28.138Z] >>> [apiv2][query] GET https://api.github.com/repos/baekexsoo/ecommerce-app [none]
+[debug] [2021-04-29T10:53:28.847Z] <<< [apiv2][status] GET https://api.github.com/repos/baekexsoo/ecommerce-app 200
+[debug] [2021-04-29T10:53:28.849Z] <<< [apiv2][body] GET https://api.github.com/repos/baekexsoo/ecommerce-app {"id":362162604,"node_id":"MDEwOlJlcG9zaXRvcnkzNjIxNjI2MDQ=","name":"ecommerce-app","full_name":"baekexsoo/ecommerce-app","private":false,"owner":{"login":"baekexsoo","id":68418755,"node_id":"MDQ6VXNlcjY4NDE4NzU1","avatar_url":"https://avatars.githubusercontent.com/u/68418755?v=4","gravatar_id":"","url":"https://api.github.com/users/baekexsoo","html_url":"https://github.com/baekexsoo","followers_url":"https://api.github.com/users/baekexsoo/followers","following_url":"https://api.github.com/users/baekexsoo/following{/other_user}","gists_url":"https://api.github.com/users/baekexsoo/gists{/gist_id}","starred_url":"https://api.github.com/users/baekexsoo/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/baekexsoo/subscriptions","organizations_url":"https://api.github.com/users/baekexsoo/orgs","repos_url":"https://api.github.com/users/baekexsoo/repos","events_url":"https://api.github.com/users/baekexsoo/events{/privacy}","received_events_url":"https://api.github.com/users/baekexsoo/received_events","type":"User","site_admin":false},"html_url":"https://github.com/baekexsoo/ecommerce-app","description":null,"fork":false,"url":"https://api.github.com/repos/baekexsoo/ecommerce-app","forks_url":"https://api.github.com/repos/baekexsoo/ecommerce-app/forks","keys_url":"https://api.github.com/repos/baekexsoo/ecommerce-app/keys{/key_id}","collaborators_url":"https://api.github.com/repos/baekexsoo/ecommerce-app/collaborators{/collaborator}","teams_url":"https://api.github.com/repos/baekexsoo/ecommerce-app/teams","hooks_url":"https://api.github.com/repos/baekexsoo/ecommerce-app/hooks","issue_events_url":"https://api.github.com/repos/baekexsoo/ecommerce-app/issues/events{/number}","events_url":"https://api.github.com/repos/baekexsoo/ecommerce-app/events","assignees_url":"https://api.github.com/repos/baekexsoo/ecommerce-app/assignees{/user}","branches_url":"https://api.github.com/repos/baekexsoo/ecommerce-app/branches{/branch}","tags_url":"https://api.github.com/repos/baekexsoo/ecommerce-app/tags","blobs_url":"https://api.github.com/repos/baekexsoo/ecommerce-app/git/blobs{/sha}","git_tags_url":"https://api.github.com/repos/baekexsoo/ecommerce-app/git/tags{/sha}","git_refs_url":"https://api.github.com/repos/baekexsoo/ecommerce-app/git/refs{/sha}","trees_url":"https://api.github.com/repos/baekexsoo/ecommerce-app/git/trees{/sha}","statuses_url":"https://api.github.com/repos/baekexsoo/ecommerce-app/statuses/{sha}","languages_url":"https://api.github.com/repos/baekexsoo/ecommerce-app/languages","stargazers_url":"https://api.github.com/repos/baekexsoo/ecommerce-app/stargazers","contributors_url":"https://api.github.com/repos/baekexsoo/ecommerce-app/contributors","subscribers_url":"https://api.github.com/repos/baekexsoo/ecommerce-app/subscribers","subscription_url":"https://api.github.com/repos/baekexsoo/ecommerce-app/subscription","commits_url":"https://api.github.com/repos/baekexsoo/ecommerce-app/commits{/sha}","git_commits_url":"https://api.github.com/repos/baekexsoo/ecommerce-app/git/commits{/sha}","comments_url":"https://api.github.com/repos/baekexsoo/ecommerce-app/comments{/number}","issue_comment_url":"https://api.github.com/repos/baekexsoo/ecommerce-app/issues/comments{/number}","contents_url":"https://api.github.com/repos/baekexsoo/ecommerce-app/contents/{+path}","compare_url":"https://api.github.com/repos/baekexsoo/ecommerce-app/compare/{base}...{head}","merges_url":"https://api.github.com/repos/baekexsoo/ecommerce-app/merges","archive_url":"https://api.github.com/repos/baekexsoo/ecommerce-app/{archive_format}{/ref}","downloads_url":"https://api.github.com/repos/baekexsoo/ecommerce-app/downloads","issues_url":"https://api.github.com/repos/baekexsoo/ecommerce-app/issues{/number}","pulls_url":"https://api.github.com/repos/baekexsoo/ecommerce-app/pulls{/number}","milestones_url":"https://api.github.com/repos/baekexsoo/ecommerce-app/milestones{/number}","notifications_url":"https://api.github.com/repos/baekexsoo/ecommerce-app/notifications{?since,all,participating}","labels_url":"https://api.github.com/repos/baekexsoo/ecommerce-app/labels{/name}","releases_url":"https://api.github.com/repos/baekexsoo/ecommerce-app/releases{/id}","deployments_url":"https://api.github.com/repos/baekexsoo/ecommerce-app/deployments","created_at":"2021-04-27T15:31:19Z","updated_at":"2021-04-27T15:41:56Z","pushed_at":"2021-04-27T15:37:43Z","git_url":"git://github.com/baekexsoo/ecommerce-app.git","ssh_url":"git@github.com:baekexsoo/ecommerce-app.git","clone_url":"https://github.com/baekexsoo/ecommerce-app.git","svn_url":"https://github.com/baekexsoo/ecommerce-app","homepage":"ecommerce-app-blush.vercel.app","size":2399,"stargazers_count":0,"watchers_count":0,"language":"TypeScript","has_issues":true,"has_projects":true,"has_downloads":true,"has_wiki":true,"has_pages":false,"forks_count":0,"mirror_url":null,"archived":false,"disabled":false,"open_issues_count":0,"license":null,"forks":0,"open_issues":0,"watchers":0,"default_branch":"main","permissions":{"admin":true,"push":true,"pull":true},"temp_clone_token":"","allow_squash_merge":true,"allow_merge_commit":true,"allow_rebase_merge":true,"delete_branch_on_merge":false,"network_count":0,"subscribers_count":1}
+[debug] [2021-04-29T10:53:28.858Z] >>> HTTP REQUEST POST https://iam.googleapis.com/v1/projects/ecommerce-8dd73/serviceAccounts  
+ {"accountId":"github-action-362162604","serviceAccount":{"displayName":"GitHub Actions (baekexsoo/ecommerce-app)","description":"A service account with permission to deploy to Firebase Hosting for the GitHub repository baekexsoo/ecommerce-app"}}
+[debug] [2021-04-29T10:53:30.143Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Thu, 29 Apr 2021 10:53:30 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-04-29T10:53:30.145Z] >>> HTTP REQUEST GET https://iam.googleapis.com/v1/projects/ecommerce-8dd73/serviceAccounts/github-action-362162604@ecommerce-8dd73.iam.gserviceaccount.com  
+ 
+[debug] [2021-04-29T10:53:30.145Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/ecommerce-8dd73:getIamPolicy  
+ 
+[debug] [2021-04-29T10:53:31.081Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Thu, 29 Apr 2021 10:53:30 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-04-29T10:53:31.425Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Thu, 29 Apr 2021 10:53:31 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=209","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-04-29T10:53:31.428Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/ecommerce-8dd73:setIamPolicy  
+ {"policy":{"version":1,"etag":"BwXBGg6FpTE=","bindings":[{"role":"roles/cloudfunctions.serviceAgent","members":["serviceAccount:service-588893656849@gcf-admin-robot.iam.gserviceaccount.com"]},{"role":"roles/editor","members":["serviceAccount:ecommerce-8dd73@appspot.gserviceaccount.com"]},{"role":"roles/firebase.managementServiceAgent","members":["serviceAccount:firebase-service-account@firebase-sa-management.iam.gserviceaccount.com"]},{"role":"roles/firebase.sdkAdminServiceAgent","members":["serviceAccount:firebase-adminsdk-qepab@ecommerce-8dd73.iam.gserviceaccount.com"]},{"role":"roles/firebaseauth.admin","members":["serviceAccount:firebase-adminsdk-qepab@ecommerce-8dd73.iam.gserviceaccount.com","serviceAccount:github-action-362162604@ecommerce-8dd73.iam.gserviceaccount.com"]},{"role":"roles/firebasedatabase.admin","members":["serviceAccount:firebase-adminsdk-qepab@ecommerce-8dd73.iam.gserviceaccount.com"]},{"role":"roles/firebaserules.system","members":["serviceAccount:service-588893656849@firebase-rules.iam.gserviceaccount.com"]},{"role":"roles/iam.serviceAccountTokenCreator","members":["serviceAccount:firebase-adminsdk-qepab@ecommerce-8dd73.iam.gserviceaccount.com"]},{"role":"roles/owner","members":["user:ndamarina17@gmail.com"]},{"role":"roles/pubsub.serviceAgent","members":["serviceAccount:service-588893656849@gcp-sa-pubsub.iam.gserviceaccount.com"]},{"role":"roles/serviceusage.apiKeysViewer","members":["serviceAccount:github-action-362162604@ecommerce-8dd73.iam.gserviceaccount.com"]},{"role":"roles/firebasehosting.admin","members":["serviceAccount:github-action-362162604@ecommerce-8dd73.iam.gserviceaccount.com"]},{"role":"roles/run.viewer","members":["serviceAccount:github-action-362162604@ecommerce-8dd73.iam.gserviceaccount.com"]}]},"updateMask":"bindings"}
+[debug] [2021-04-29T10:53:32.765Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Thu, 29 Apr 2021 10:53:32 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=562","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-04-29T10:53:32.773Z] >>> HTTP REQUEST POST https://iam.googleapis.com/v1/projects/ecommerce-8dd73/serviceAccounts/github-action-362162604@ecommerce-8dd73.iam.gserviceaccount.com/keys  
+ {"keyAlgorithm":"KEY_ALG_UNSPECIFIED","privateKeyType":"TYPE_GOOGLE_CREDENTIALS_FILE"}
+[debug] [2021-04-29T10:53:33.991Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Thu, 29 Apr 2021 10:53:33 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] 
+[info] +  Created service account github-action-362162604 with Firebase Hosting admin permissions. 
+[debug] [2021-04-29T10:53:34.061Z] >>> [apiv2][query] PUT https://api.github.com/repos/baekexsoo/ecommerce-app/actions/secrets/FIREBASE_SERVICE_ACCOUNT_ECOMMERCE_8DD73 [none]
+[debug] [2021-04-29T10:53:34.062Z] >>> [apiv2][body] PUT https://api.github.com/repos/baekexsoo/ecommerce-app/actions/secrets/FIREBASE_SERVICE_ACCOUNT_ECOMMERCE_8DD73 {"encrypted_value":"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","key_id":"568250167242549743"}
+[debug] [2021-04-29T10:53:34.899Z] <<< [apiv2][status] PUT https://api.github.com/repos/baekexsoo/ecommerce-app/actions/secrets/FIREBASE_SERVICE_ACCOUNT_ECOMMERCE_8DD73 201
+[debug] [2021-04-29T10:53:34.900Z] <<< [apiv2][body] PUT https://api.github.com/repos/baekexsoo/ecommerce-app/actions/secrets/FIREBASE_SERVICE_ACCOUNT_ECOMMERCE_8DD73 {}
+[info] +  Uploaded service account JSON to GitHub as secret FIREBASE_SERVICE_ACCOUNT_ECOMMERCE_8DD73. 
+[info] i  You can manage your secrets at https://github.com/baekexsoo/ecommerce-app/settings/secrets. 
+[info] 
+[info] 
+[info] +  Created workflow file C:\Users\Rina\Desktop\graduation_project-main\.github/workflows/firebase-hosting-pull-request.yml 
+[info] 
+[info] +  Created workflow file C:\Users\Rina\Desktop\graduation_project-main\.github/workflows/firebase-hosting-merge.yml 
+[info] 
+[info] i  Action required: Visit this URL to revoke authorization for the Firebase CLI GitHub OAuth App: 
+[info] https://github.com/settings/connections/applications/89cf50f02ac6aaed3484
+[info] i  Action required: Push any new workflow file(s) to your repo 
+[info] 
+=== Storage Setup
+[info] 
+[info] Firebase Storage Security Rules allow you to define how and when to allow
+[info] uploads and downloads. You can keep these rules in your project directory
+[info] and publish them with firebase deploy.
+[info] 
+[info] 
+=== Emulators Setup
+[info] i  firestore: downloading cloud-firestore-emulator-v1.11.14.jar... {"metadata":{"emulator":{"name":"firestore"},"message":"downloading cloud-firestore-emulator-v1.11.14.jar..."}}
+[debug] [2021-04-29T10:54:36.265Z] >>> [apiv2][query] GET https://storage.googleapis.com/firebase-preview-drop/emulator/cloud-firestore-emulator-v1.11.14.jar 
+[debug] [2021-04-29T10:54:37.129Z] <<< [apiv2][status] GET https://storage.googleapis.com/firebase-preview-drop/emulator/cloud-firestore-emulator-v1.11.14.jar 200
+[debug] [2021-04-29T10:54:37.129Z] <<< [apiv2][body] GET https://storage.googleapis.com/firebase-preview-drop/emulator/cloud-firestore-emulator-v1.11.14.jar [stream]
+[info] i  database: downloading firebase-database-emulator-v4.7.2.jar... {"metadata":{"emulator":{"name":"database"},"message":"downloading firebase-database-emulator-v4.7.2.jar..."}}
+[debug] [2021-04-29T11:10:57.918Z] >>> [apiv2][query] GET https://storage.googleapis.com/firebase-preview-drop/emulator/firebase-database-emulator-v4.7.2.jar 
+[debug] [2021-04-29T11:10:59.344Z] <<< [apiv2][status] GET https://storage.googleapis.com/firebase-preview-drop/emulator/firebase-database-emulator-v4.7.2.jar 200
+[debug] [2021-04-29T11:10:59.344Z] <<< [apiv2][body] GET https://storage.googleapis.com/firebase-preview-drop/emulator/firebase-database-emulator-v4.7.2.jar [stream]
+[info] i  ui: downloading ui-v1.4.2.zip... {"metadata":{"emulator":{"name":"ui"},"message":"downloading ui-v1.4.2.zip..."}}
+[debug] [2021-04-29T11:17:51.375Z] >>> [apiv2][query] GET https://storage.googleapis.com/firebase-preview-drop/emulator/ui-v1.4.2.zip 
+[info] 
+=== Remoteconfig Setup
+[debug] [2021-04-29T11:17:53.029Z] <<< [apiv2][status] GET https://storage.googleapis.com/firebase-preview-drop/emulator/ui-v1.4.2.zip 200
+[debug] [2021-04-29T11:17:53.029Z] <<< [apiv2][body] GET https://storage.googleapis.com/firebase-preview-drop/emulator/ui-v1.4.2.zip [stream]

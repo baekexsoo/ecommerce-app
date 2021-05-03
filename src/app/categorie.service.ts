@@ -11,7 +11,7 @@ export class CategorieService {
   constructor(private httpClient: HttpClient) { }
 
   getProducts(): Observable<any>{
-    const url = 'assets/data/cat-product.json';
+    const url = 'assets/data/dummy-prod.json';
     return this.httpClient.get(url)
     .pipe(
       tap(

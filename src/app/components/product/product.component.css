@@ -1,0 +1,12 @@
+.badge-category{
+    z-index: 1;
+    display: inline-block;
+    /* position: relative; */
+    width: fit-content;
+    /* width: 50%; */
+    left: 160px;
+}
+
+.btn-gallery{
+    width: 100%;
+}

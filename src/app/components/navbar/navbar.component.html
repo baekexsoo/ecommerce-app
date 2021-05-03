@@ -3,7 +3,7 @@
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-lg-2 col-4">
-                    Sample E-commerce
+                    myApp
                 </div>
                 <div class="col-lg-6 col-sm-12">
                     <app-searchbar (onSearchTyping)="onTyping($event)"></app-searchbar>
@@ -16,12 +16,12 @@
                             <span class="badge badge-pill badge-danger notify">0</span>
                         </div>
                         <div class="widget-header icontext">
-                            <a href="#" class="icon icon-sm rounded-circle border"><i class="fa fa-user"></i></a>
+                            <a [routerLink]="['/register']" class="icon icon-sm rounded-circle border"><i class="fa fa-user"></i></a>
                             <div class="text">
                                 <span class="text-muted">Welcome!</span>
                                 <div>
-                                    <a href="#">Sign in</a> |
-                                    <a [routerLink]="['/register']"> Register</a>
+                                    <a  [routerLink]="['/login']" type="button" class="btn btn-signin btn-secondary btn-lg" >Sign in</a> |
+                                    <a [routerLink]="['/register']"  type="button" class="btn btn-signin btn-secondary btn-lg"> Register</a>
                                 </div>
                             </div>
                         </div>

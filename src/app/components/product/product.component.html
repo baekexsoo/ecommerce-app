@@ -1,8 +1,9 @@
 <div href="#" class="card card-product-grid">
-  <a href="#" class="img-wrap"> <img src="{{product.imageUrl}}"> </a>
+  <a [routerLink]="['/categorie']"  class="badge badge-category badge-primary">{{product.title}}</a>
+  <a href="#" class="img-wrap"> <img src="{{product.imageUrl}}">{{product.title}} </a>
   <figcaption class="info-wrap">
     
-      <a [routerLink]="['/categorie']"  class="btn btn-outline-primary">{{product.title}}</a>
-      <a href="{{ product.urlProd }}"  class="btn btn-outline-primary">{{product.galerie}}</a>
-    </figcaption>
+    <a href="{{ product.urlProd }}" type="button" class="btn btn-gallery btn-secondary btn-lg">{{product.galerie}}</a>
+        </figcaption>
 </div>
+

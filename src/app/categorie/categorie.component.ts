@@ -1,31 +1,17 @@
-import { Component, OnInit } from '@angular/core';
-import {Category } from '../models/cat-products.interface';
-import { CategorieService } from '../categorie.service';
+import { Component, Input, OnInit } from '@angular/core';
+import { Product } from 'src/app/models/product.interface';
 
 @Component({
-  selector: 'app-categorie',
+  selector: 'app-product',
   templateUrl: './categorie.component.html',
   styleUrls: ['./categorie.component.css']
 })
 export class CategorieComponent implements OnInit {
+  @Input() product: Product;
+  constructor() { }
 
-  products: Category[] = [];
-  searchResult: Category[] = [];
-
-  constructor(private prodService: CategorieService) { }
-
-  ngOnInit(): void{
-    this.prodService.getProducts().subscribe( (res) => {
-      this.products = res;
-    });
-
-    console.log(this.products)
-  }
-
-  searchProduct(searchString): void{
-    this.searchResult = this.products.filter((item: Category) => {
-      return item.title.toLowerCase().indexOf(searchString.toLowerCase()) !== -1;
-    });
+  ngOnInit(): void { 
+    console.log(this.product)
   }
 
 }

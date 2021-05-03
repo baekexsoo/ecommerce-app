@@ -1,25 +1,23 @@
 import { Component, OnInit } from '@angular/core';
-import { RegisterModel } from '../models/register.model';
+import { LoginModel } from '../models/login.model';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 import { AuthService } from '../services/auth.service';
 
 @Component({
-  selector: 'app-register',
-  templateUrl: './register.component.html',
-  styleUrls: ['./register.component.scss']
+  selector: 'app-login',
+  templateUrl: './login.component.html',
+  styleUrls: ['./login.component.scss']
 })
-export class RegisterComponent implements OnInit {
-  user: RegisterModel = new RegisterModel();
-  registerForm: FormGroup;
+export class LoginComponent implements OnInit {
+
+  user: LoginModel = new LoginModel(); 
+  loginForm: FormGroup;
   hide = true;
 
   constructor(private formBuilder: FormBuilder, public auth: AuthService) { }
 
   ngOnInit() {
-    this.registerForm = this.formBuilder.group({
-      'name': [this.user.name, [
-        Validators.required
-      ]],
+    this.loginForm = this.formBuilder.group({
       'email': [this.user.email, [
         Validators.required,
         Validators.email
@@ -32,8 +30,8 @@ export class RegisterComponent implements OnInit {
     });
   }
 
-  onRegisterSubmit() {
-    alert(this.user.name + ' ' + this.user.email + ' ' + this.user.password);
+  onLoginSubmit() {
+    alert(this.user.email + ' ' + this.user.password);
   }
 
 }

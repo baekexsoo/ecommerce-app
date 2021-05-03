@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { RegisterComponent } from './register.component';
+import { LoginComponent } from './login.component';
 import { Routes, RouterModule } from '@angular/router';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatButtonModule } from '@angular/material/button';
@@ -16,21 +16,24 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatIconModule } from '@angular/material/icon';
 import { MatRippleModule } from '@angular/material/core';
 import { MatInputModule } from '@angular/material/input';
-
+import { CategorieComponent } from '../categorie/categorie.component';
+import { AuthGuard } from '../services/auth.guard';
 
 const routes: Routes = [
   {
-    path: 'register',
-    component: RegisterComponent,
+    path: 'login',
+    component: LoginComponent,
   },
+
+    { path: 'categorie', component: CategorieComponent, canActivate: [AuthGuard] }
+
 ]
 
 @NgModule({
   declarations: [
-    RegisterComponent
+    LoginComponent
   ],
   imports: [
-    CommonModule,
     FormsModule,
         ReactiveFormsModule,
         MatButtonModule,
@@ -38,7 +41,8 @@ const routes: Routes = [
     MatInputModule,
     MatRippleModule,
     MatSliderModule,
+    CommonModule,
     RouterModule.forChild(routes),
   ]
 })
-export class RegisterModule { }
+export class LoginModule { }
